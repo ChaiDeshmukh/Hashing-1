@@ -1,0 +1,28 @@
+Problem 1:
+
+BruteForce: 
+check every string with every other string in an array. ==> n^2
+compare each char in a string with each char in other string. ==> m^2
+
+Time Complexity: n^2m^2
+Space Complexity: O(1)
+
+
+Using Sorting and Hashmap
+sort each string and put it in the hashmap as a key and respective strings as a value.
+
+Time Complexity: nmlog(n) --> n : elements & mlog(n): sorting
+Space Complexity: O(mn)  --> for hashmap and sorting the element everytime
+
+
+Optimal solution with prime product.
+
+take a prime product of each string and put it in the hashmap as a key and respective strings as a value.
+
+Time Complexity: O(mn) --> n : elements & m: largest string present in the array
+Space Complexity: O(n)  --> for hashmap
+
+
+
+
+
